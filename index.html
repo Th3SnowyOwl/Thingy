@@ -8,46 +8,46 @@
 		<style>
 			@font-face {
 				font-family: Pixel;
-				src: url(fonts/pixel.otf);
+				src: url(https://raw.githubusercontent.com/Th3SnowyOwl/Thingy/main/docs/fonts/pixel.otf);
 			}
 			#myProgress {
-				font-family: Pixel;
+            	font-family: Pixel;
 				color: #FFC800;
 				background-color: #FFFFFF;
 				position: absolute;
-				text-shadow: 1px 1px 4px #FFC800;
+                text-shadow: 1px 1px 4px #FFC800;
 				left: 4%;
 				bottom: 7%;
 			}
 			#myBar {
 				width: 0%;
 				height: 5%;
+                margin-right: 10px%;
 				background-color: #FFC800;
 				position: absolute;
 				left: 2%;
 				bottom: 2%;
-				border-radius: 10px;
-				background-image: linear-gradient(90deg, #D000FF, #FFC800);
+                border-radius: 10px;
+                background-image: linear-gradient(90deg, #D000FF, #FFC800);
 			}
 		</style>
 		<script>
 			var i = 0;
 			function move() {
-			if (i == 0) {
-			i = 1;
-			var elem = document.getElementById("myBar");
-			var textupdate = document.getElementById("myProgress");
-			var width = 10;
-			var id = setInterval(frame, 10);
-			function frame() {
-			if (width >= 100) {
-			clearInterval(id);
-			i = 0;
-			} else {
-			width++;
-			elem.style.width = width + "%";
-			textupdate.innerHTML = width + "% This Can Take A Few Minutes";
-			}}}}
+				if (i == 0) {
+				i = 1;
+				var elem = document.getElementById("myBar");
+				var textupdate = document.getElementById("myProgress");
+				var width = 0;
+				var id = setInterval(frame, 10);
+				function frame() {
+					if (width >= 95) {
+						clearInterval(id);
+						i = 0;
+						} else {
+							width++;
+							elem.style.width = width + "%";
+							textupdate.innerHTML = width + "% This Can Take A Few Minutes";}}}}
 		</script>
 	</head>
 	<body onload="move()">
