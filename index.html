@@ -3,11 +3,51 @@
 	<head>
 		<title>Thingy</title>
 		<link rel="icon" href="docs/favicon.png"/>
-		<link rel="stylesheet" type="text/css" href="docs/css/main.css"/>
-		<script src="docs/js/loadingbar.js"></script>
+		<!-- <link rel="stylesheet" type="text/css" href="docs/css/main.css"/> -->
+		<!-- <script src="docs/js/loadingbar.js"></script> -->
+			<style>
+			#myProgress {
+				color: #FFC800;
+				background-color: #FFFFFF;
+				width: 100%;
+				position: absolute;
+				left: 5px;
+				bottom: 40px;
+			}
+			#myBar {
+				width: 10%;
+				height: 30px;
+				background-color: #FFC800;
+				text-align: center;
+				line-height: 0px;
+				color: white;
+				position: absolute;
+				left: 5px;
+				bottom: 40px;
+			}
+		</style>
+		<script>
+			var i = 0;
+			function move() {
+			if (i == 0) {
+			i = 1;
+			var elem = document.getElementById("myBar");
+			var textupdate = document.getElementById("myProgress");
+			var width = 10;
+			var id = setInterval(frame, 10);
+			function frame() {
+			if (width >= 100) {
+			clearInterval(id);
+			i = 0;
+			} else {
+			width++;
+			elem.style.width = width + "%";
+			textupdate.innerHTML = width + "%";
+			}}}}
+		</script>
 	</head>
 	<body onload="move()">
-		<div id="myBar" class="progtextMove">0%</div>
 		<div id="myProgress"></div>
+		<div id="myBar" class="progtextMove"></div>
 	</body>
 </html>
