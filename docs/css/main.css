@@ -1,3 +1,8 @@
+#progressBar {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
 #myProgress {
 	width: 100%;
 	background-color: #ddd;
@@ -11,11 +16,7 @@
 	color: white;
 }
 .progtextMove {
+	position: relative;
 	left: 5px;
 	bottom: 20px;
-}
-#progressBar {
-	position: absolute;
-	right: 5px;
-	bottom: 5px;
 }
