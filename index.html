@@ -14,6 +14,11 @@
 			.container {
 			}
 
+			.blackwhite {
+				color: #EEEEEE;
+				background-color: #323232;
+			}
+
 			#myProgress {
 				font-family: Pixel;
 				color: #FFC800;
@@ -38,14 +43,11 @@
 
 			.center {
 				position: absolute;
-				top: 50%;
-				right: 50%;
+				top: 42%;
+				width: 100%;
+				height: auto;
+				text-align: center;
 			}
-
-			.loadimg {
-			z-index: -1;
-			}
-
 		</style>
 		
 		<script>
@@ -70,10 +72,10 @@
 		
 	</head>
 	
-	<body onload="move()">
+	<body onload="move()" class="blackwhite">
 
 		<div class="container" width="100%" height="100%">
-			<img src="assets/loadlogo.png" class="center, loadimg" alt="how did you break this">
+			<div class="center"><div class="center"><img src="assets/loadlogo.png" class="center" alt="how did you break this"></div>
 			<div id="myProgress"></div>
 			<div id="myBar"></div>
 		</div>
