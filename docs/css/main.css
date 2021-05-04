@@ -1,11 +1,10 @@
-#progressBar {
-	position: absolute;
-	right: 5px;
-	bottom: 5px;
-}
 #myProgress {
+	color: #FFC800;
+	background-color: #FFFFFF;
 	width: 100%;
-	background-color: #ddd;
+	position: absolute;
+	left: 5px;
+	bottom: 40px;
 }
 #myBar {
 	width: 10%;
@@ -14,9 +13,7 @@
 	text-align: center;
 	line-height: 0px;
 	color: white;
-}
-.progtextMove {
-	position: relative;
+	position: absolute;
 	left: 5px;
-	bottom: 20px;
+	bottom: 40px;
 }
