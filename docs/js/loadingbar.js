@@ -3,6 +3,7 @@ function move() {
   if (i == 0) {
     i = 1;
     var elem = document.getElementById("myBar");
+    var textupdate = document.getElementById("myProgress");
     var width = 10;
     var id = setInterval(frame, 10);
     function frame() {
@@ -12,7 +13,7 @@ function move() {
       } else {
         width++;
         elem.style.width = width + "%";
-        elem.innerHTML = width  + "%";
+        textupdate.innerHTML = width  + "%";
       }
     }
   }
