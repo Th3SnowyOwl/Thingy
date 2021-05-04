@@ -48,6 +48,14 @@
 				overflow: hidden;
 				opacity: 0.9;
 			}
+			.fit { /* set relative picture size */
+            			max-width: 100%;
+            			max-height: 100%;
+       			 }
+      			  .center3 {
+          			display: block;
+				margin: auto;
+			}
 		</style>
 		
 		<script>
@@ -75,7 +83,7 @@
 	<body onload="move()" style="background-color:#323232;" scroll="no">
 
 		<div class="container" width="100%" height="100%">
-			<div class="center1"><img src="assets/lnbg.png" alt="line background"></div>
+			<div class="center1 center3 fit"><img src="assets/lnbg.png" alt="line background"></div>
 			<div class="center"><img src="assets/loadlogo.png" alt="how did you break this" height="25%" width="35%"></div>
 			<div id="myProgress"></div>
 			<div id="myBar"></div>
