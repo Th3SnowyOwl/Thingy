@@ -3,5 +3,5 @@
 .body1			{background-color: #323232;background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #323232 16px ), repeating-linear-gradient( #D000FF55, #D000FF );;}
 #myProgress		{font-family: Pixel;color: #FFC800;position: absolute;text-shadow: 1px 1px 4px #FFC800;left: 4%;bottom: 7%;}
 #myBar			{width: 0%;height: 5%;margin-right: 10px%;background-color: #FFC800;position: absolute;left: 2%;bottom: 2%;border-radius: 10px;background-image: linear-gradient(90deg, #D000FF, #FFC800);}
-.center			{position: absolute;top: 39%;width: 100%;text-align: center;opacity: 0.9;}
-.bg			{height: 100%;width: 100%;overflow: hidden;}
+.logo			{position: absolute;top: 39%;width: 100%;text-align: center;opacity: 0.9;}
+.bg				{height: 100%;width: 100%;overflow: hidden;}
