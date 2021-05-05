@@ -1,19 +1,37 @@
+@font-face {
+font-family: Pixel;
+src: url(https://raw.githubusercontent.com/Th3SnowyOwl/Thingy/main/docs/fonts/pixel.otf);
+}
+.container {
+}
 #myProgress {
-	color: #FFC800;
-	background-color: #FFFFFF;
-	width: 100%;
-	position: absolute;
-	left: 5px;
-	bottom: 40px;
+font-family: Pixel;
+color: #FFC800;
+position: absolute;
+text-shadow: 1px 1px 4px #FFC800;
+left: 4%;
+bottom: 7%;
 }
 #myBar {
-	width: 10%;
-	height: 30px;
-	background-color: #FFC800;
-	text-align: center;
-	line-height: 0px;
-	color: white;
-	position: absolute;
-	left: 5px;
-	bottom: 40px;
+width: 0%;
+height: 5%;
+
+
+
+
+margin-right: 10px%;
+background-color: #FFC800;
+position: absolute;
+left: 2%;
+bottom: 2%;
+border-radius: 10px;
+background-image: linear-gradient(90deg, #D000FF, #FFC800);
 }
+.center {
+position: absolute;
+top: 39%;
+width: 100%;
+text-align: center;
+opacity: 0.9;}
+.center1{height: 100%;width: 100%;overflow: hidden;opacity: 0.9;}
+.center2{display: block;margin: auto;}
