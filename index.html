@@ -1,93 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<title>Thingy</title>
 		<link rel="icon" href="docs/favicon.png"/>
-		<!-- <link rel="stylesheet" type="text/css" href="docs/css/main.css"/> -->
-		<!-- <script src="docs/js/loadingbar.js"></script> -->
-		<style>
-			@font-face {
-				font-family: Pixel;
-				src: url(docs/fonts/pixel.otf);
-			}
-
-			.container {
-			}
-
-			#myProgress {
-				font-family: Pixel;
-				color: #FFC800;
-				position: absolute;
-				text-shadow: 1px 1px 4px #FFC800;
-				left: 4%;
-				bottom: 7%;
-			}
-
-			#myBar {
-				width: 0%;
-				height: 5%;
-				margin-right: 10px%;
-				background-color: #FFC800;
-				position: absolute;
-				left: 2%;
-				bottom: 2%;
-				border-radius: 10px;
-				background-image: linear-gradient(90deg, #D000FF, #FFC800);
-			}
-
-			.center {
-				position: absolute;
-				top: 39%;
-				width: 100%;
-				text-align: center;
-				opacity: 0.9;
-			}
-			.center1 {
-				height: 100%;
-				width: 100%;
-				overflow: hidden;
-				opacity: 0.9;
-			}
-			.fit { /* set relative picture size */
-            			max-width: 100%;
-            			max-height: 100%;
-       			 }
-      			  .center3 {
-          			display: block;
-				margin: auto;
-			}
-		</style>
-		
-		<script>
-			var i = 0;
-			var add = 5;
-			function move() {
-			if (i == 0) {
-			i = 1;
-			var elem = document.getElementById("myBar");
-			var textupdate = document.getElementById("myProgress");
-			var width = 0;
-			var id = setInterval(frame, 10);
-			function frame() {
-			if (width >= 95) {
-			clearInterval(id);
-			i = 0;
-			} else {
-			width++;
-			elem.style.width = width + "%";
-			textupdate.innerHTML = width + add + "% This Can Take A Few Minutes";}}}}
-		</script>
-		
+		<link rel="stylesheet" type="text/css" href="docs/css/main.css"/>
+		<script src="docs/js/loadingbar.js"></script>	
 	</head>
-	
-	<body onload="move()" style="background-color:#323232;">
 
-		<div class="container" width="100%" height="100%">
-			<div class="center1 center3 fit"><img src="assets/lnbg.png" alt="line background"></div>
-			<div class="center"><img src="assets/loadlogo.png" alt="how did you break this" height="25%" width="35%"></div>
+	<body onload="move()" class="body1, bg">
+
+		<div class="container">
+			<div class="logo">
+				<img src="assets/loadlogo.png" alt="how did you break this" height="25%" width="35%">
+			</div>
 			<div id="myProgress"></div>
 			<div id="myBar"></div>
 		</div>
-		
+
 	</body>
 </html>
