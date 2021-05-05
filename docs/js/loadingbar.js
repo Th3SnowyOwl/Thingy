@@ -6,7 +6,7 @@ function move() {
     var elem = document.getElementById("myBar");
     var textupdate = document.getElementById("myProgress");
     var width = 1;
-    var id = setInterval(frame, 10);
+    var id = setInterval(frame, 50);
     function frame() {
       if (width >= 95) {
         clearInterval(id);
